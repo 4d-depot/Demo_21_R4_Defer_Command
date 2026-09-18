@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="Demo_21_R4_DeferCommand" uuid="FB38C4ACB2564AAABE8BBD5C3D3688DF" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<base_extra>
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>

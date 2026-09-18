@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog version='2.1'>
+  <product ref='P-100' label='Keyboard' price='49.00'/>
+  <product ref='P-200' label='Mouse' price='25.50'/>
+  <product ref='P-300' label='Monitor' price='189.90'/>
+</catalog>

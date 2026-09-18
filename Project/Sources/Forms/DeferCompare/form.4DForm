@@ -1,0 +1,379 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowTitle": "defer — the same job, written twice",
+	"formClass": "FC_DeferCompare",
+	"width": 1320,
+	"height": 800,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"markerBody": 800,
+	"markerBreak": 800,
+	"markerFooter": 800,
+	"markerHeader": 0,
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 1120,
+	"windowMinHeight": 640,
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"bgMain": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1320,
+					"height": 800,
+					"fill": "#F4F6FA",
+					"stroke": "transparent",
+					"sizingX": "grow",
+					"sizingY": "grow"
+				},
+				"headerBar": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1320,
+					"height": 60,
+					"fill": "#12203A",
+					"stroke": "transparent",
+					"sizingX": "grow"
+				},
+				"title": {
+					"type": "text",
+					"top": 8,
+					"left": 20,
+					"width": 900,
+					"height": 24,
+					"text": "The same job, written twice",
+					"fontSize": 18,
+					"fontWeight": "bold",
+					"stroke": "#FFFFFF"
+				},
+				"subtitle": {
+					"type": "input",
+					"dataSource": "Form.subtitle",
+					"dataSourceTypeHint": "text",
+					"enterable": false,
+					"focusable": false,
+					"top": 34,
+					"left": 20,
+					"width": 1280,
+					"height": 18,
+					"fontSize": 12,
+					"stroke": "#FFFFFF",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"sizingX": "grow"
+				},
+				"lblExample": {
+					"type": "text",
+					"top": 76,
+					"left": 20,
+					"width": 60,
+					"height": 20,
+					"text": "Example",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"stroke": "#12203A"
+				},
+				"dropExample": {
+					"type": "dropdown",
+					"top": 74,
+					"left": 84,
+					"width": 280,
+					"height": 24,
+					"dataSource": "Form.examples",
+					"dataSourceTypeHint": "object",
+					"fontSize": 12,
+					"method": "ObjectMethods/dropExample.4dm",
+					"events": [
+						"onDataChange"
+					]
+				},
+				"lblScenario": {
+					"type": "text",
+					"top": 76,
+					"left": 380,
+					"width": 62,
+					"height": 20,
+					"text": "Scenario",
+					"fontSize": 12,
+					"fontWeight": "bold",
+					"stroke": "#12203A"
+				},
+				"dropScenario": {
+					"type": "dropdown",
+					"top": 74,
+					"left": 446,
+					"width": 300,
+					"height": 24,
+					"dataSource": "Form.scenarios",
+					"dataSourceTypeHint": "object",
+					"fontSize": 12
+				},
+				"btnRun": {
+					"type": "button",
+					"style": "roundedBevel",
+					"top": 74,
+					"left": 762,
+					"width": 110,
+					"height": 24,
+					"text": "Run both",
+					"textAlign": "center",
+					"fontSize": 13,
+					"fontWeight": "bold",
+					"method": "ObjectMethods/btnRun.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"chkCleanup": {
+					"type": "checkbox",
+					"style": "regular",
+					"top": 76,
+					"left": 888,
+					"width": 220,
+					"height": 20,
+					"text": "Show clean-up code only",
+					"dataSource": "Form.cleanupOnly",
+					"dataSourceTypeHint": "boolean",
+					"fontSize": 12,
+					"method": "ObjectMethods/chkCleanup.4dm",
+					"events": [
+						"onClick"
+					]
+				},
+				"resultBar": {
+					"type": "rectangle",
+					"top": 106,
+					"left": 20,
+					"width": 1280,
+					"height": 30,
+					"fill": "#E7EFFB",
+					"stroke": "transparent",
+					"sizingX": "grow"
+				},
+				"lblResult": {
+					"type": "text",
+					"top": 113,
+					"left": 32,
+					"width": 130,
+					"height": 20,
+					"text": "Execution result:",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#12203A"
+				},
+				"resultMessage": {
+					"type": "input",
+					"dataSource": "Form.resultMessage",
+					"dataSourceTypeHint": "text",
+					"enterable": false,
+					"focusable": false,
+					"top": 113,
+					"left": 168,
+					"width": 1120,
+					"height": 22,
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#0B63CE",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"sizingX": "grow"
+				},
+				"hdrLegacy": {
+					"type": "text",
+					"top": 150,
+					"left": 20,
+					"width": 640,
+					"height": 20,
+					"text": "WITHOUT defer",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#C81E1E"
+				},
+				"metricsLegacy": {
+					"type": "input",
+					"dataSource": "Form.metricsLegacy",
+					"dataSourceTypeHint": "text",
+					"enterable": false,
+					"focusable": false,
+					"top": 172,
+					"left": 20,
+					"width": 640,
+					"height": 18,
+					"fontSize": 11,
+					"stroke": "#5A6B85",
+					"fill": "transparent",
+					"borderStyle": "none"
+				},
+				"hdrDefer": {
+					"type": "text",
+					"top": 150,
+					"left": 676,
+					"width": 640,
+					"height": 20,
+					"text": "WITH defer",
+					"fontSize": 14,
+					"fontWeight": "bold",
+					"stroke": "#1A7F37",
+					"sizingX": "move"
+				},
+				"metricsDefer": {
+					"type": "input",
+					"dataSource": "Form.metricsDefer",
+					"dataSourceTypeHint": "text",
+					"enterable": false,
+					"focusable": false,
+					"top": 172,
+					"left": 676,
+					"width": 640,
+					"height": 18,
+					"fontSize": 11,
+					"stroke": "#5A6B85",
+					"fill": "transparent",
+					"borderStyle": "none",
+					"sizingX": "move"
+				},
+				"lbLegacy": {
+					"type": "listbox",
+					"listboxType": "collection",
+					"dataSource": "Form.legacyLines",
+					"metaSource": "This.meta",
+					"top": 194,
+					"left": 20,
+					"width": 640,
+					"height": 558,
+					"rowHeight": "15px",
+					"showHeaders": false,
+					"hideExtraBlankRows": true,
+					"hideFocusRing": true,
+					"sortable": false,
+					"selectionMode": "single",
+					"fill": "#FFFFFF",
+					"verticalAlign": "middle",
+					"fontFamily": "Menlo",
+					"fontSize": 11,
+					"sizingY": "grow",
+					"columns": [
+						{
+							"name": "colLegacyNum",
+							"dataSource": "This.num",
+							"dataSourceTypeHint": "integer",
+							"width": 40,
+							"enterable": false,
+							"textAlign": "right",
+							"stroke": "#B8C2D0",
+							"header": {
+								"name": "headerLegacyNum",
+								"text": "#"
+							},
+							"footer": {
+								"name": "Footer1"
+							}
+						},
+						{
+							"name": "colLegacyCode",
+							"dataSource": "This.code",
+							"width": 584,
+							"enterable": false,
+							"header": {
+								"name": "headerLegacyCode",
+								"text": "Code"
+							},
+							"footer": {
+								"name": "Footer2"
+							}
+						}
+					]
+				},
+				"lbDefer": {
+					"type": "listbox",
+					"listboxType": "collection",
+					"dataSource": "Form.deferLines",
+					"metaSource": "This.meta",
+					"top": 194,
+					"left": 676,
+					"width": 640,
+					"height": 558,
+					"rowHeight": "15px",
+					"showHeaders": false,
+					"hideExtraBlankRows": true,
+					"hideFocusRing": true,
+					"sortable": false,
+					"selectionMode": "single",
+					"fill": "#FFFFFF",
+					"verticalAlign": "middle",
+					"fontFamily": "Menlo",
+					"fontSize": 11,
+					"sizingX": "move",
+					"sizingY": "grow",
+					"columns": [
+						{
+							"name": "colDeferNum",
+							"dataSource": "This.num",
+							"dataSourceTypeHint": "integer",
+							"width": 40,
+							"enterable": false,
+							"textAlign": "right",
+							"stroke": "#B8C2D0",
+							"header": {
+								"name": "headerDeferNum",
+								"text": "#"
+							},
+							"footer": {
+								"name": "Footer3"
+							}
+						},
+						{
+							"name": "colDeferCode",
+							"dataSource": "This.code",
+							"width": 584,
+							"enterable": false,
+							"header": {
+								"name": "headerDeferCode",
+								"text": "Code"
+							},
+							"footer": {
+								"name": "Footer4"
+							}
+						}
+					]
+				},
+				"footer": {
+					"type": "text",
+					"top": 764,
+					"left": 20,
+					"width": 1140,
+					"height": 20,
+					"text": "defer(expression) — stacked where it is declared, executed in LIFO order when the method exits: normal end, Return, or user abort.",
+					"fontSize": 11,
+					"stroke": "#5A6B85",
+					"sizingY": "move",
+					"sizingX": "grow"
+				},
+				"btnClose": {
+					"type": "button",
+					"style": "roundedBevel",
+					"top": 760,
+					"left": 1196,
+					"width": 104,
+					"height": 26,
+					"text": "Close",
+					"textAlign": "center",
+					"fontSize": 12,
+					"action": "cancel",
+					"sizingX": "move",
+					"sizingY": "move"
+				}
+			}
+		}
+	],
+	"method": "method.4dm"
+}

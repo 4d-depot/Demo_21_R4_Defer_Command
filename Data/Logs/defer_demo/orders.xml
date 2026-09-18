@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<orders>
+  <order id='A-001' customer='ACME'>
+    <line ref='P-100' qty='2'/>
+    <line ref='P-999' qty='1'/>
+  </order>
+  <order id='A-002' customer='Globex'>
+    <line ref='P-200' qty='4'/>
+  </order>
+</orders>
